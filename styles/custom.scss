@@ -1,0 +1,74 @@
+// colors
+$white: hsl(0, 0%, 100%);
+$black-bis: hsl(0, 0%, 7%);
+$black-ter: hsl(0, 0%, 14%);
+$grey-darker: hsl(0, 0%, 21%);
+$grey-dark: hsl(0, 0%, 29%);
+$grey-light: hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+$white-ter: hsl(0, 0%, 96%);
+$white-bis: hsl(0, 0%, 98%);
+// commons
+$radius: 8px;
+$radius-large: 10px;
+// texts
+$title-color: $black-ter;
+$title-family: "Roboto Slab";
+// input
+$input-color: $black-ter;
+// box
+$box-color: inherit;
+$box-padding: 0.5rem;
+$box-shadow: 0;
+$box-radius: $radius-large;
+// container
+$container-max-width: 1040px;
+
+
+@import 'bulma/bulma';
+
+textarea {
+  font-size: 1.1rem;
+}
+
+// status input
+.react-select-container {
+  width: 300px;
+  height: 100%;
+
+  & > div {
+    height: 100%;
+    padding: 2px;
+    border-radius: $radius;
+    border-color: $grey-lighter;
+  }
+
+  & > div > div > span {
+    display: none;
+  }
+
+  #react-select-3-listbox>div {
+    background-color: $white;
+  }
+}
+
+// tags input
+.rti--container {
+  display: flex;
+  flex-wrap: nowrap !important;
+  width: 100%;
+  background-color: $white;
+
+  --rti-bg: $white;
+  --rti-border: $white;
+  --rti-main: $blue;
+  --rti-radius: 8px;
+  --rti-s: 0.5rem;
+  /* spacing */
+  --rti-tag: #edf2f7;
+  --rti-tag-remove: $red;
+}
+
+.rti--container .rti--input {
+  width: 100%;
+}
