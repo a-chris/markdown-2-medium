@@ -1,4 +1,5 @@
 import "bulma/css/bulma.css";
+import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/custom.scss";
@@ -18,6 +19,11 @@ function MyApp({ Component, pageProps }) {
         rtl={false}
         draggable={false}
         pauseOnFocusLoss={false}
+      />
+      <Script
+        defer
+        data-domain="markdown-2-medium.vercel.app"
+        src="https://faenz.onrender.com/faenz.js"
       />
       <Component {...pageProps} />
     </>
